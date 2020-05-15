@@ -1,2 +1,8 @@
 # Play-with-C
-This is for development and testing
+#This is for development and testing
+#include <stdio.h>
+int main() {
+   // printf() displays the string inside quotation
+   printf("Hello, World!");
+   return 0;
+}
