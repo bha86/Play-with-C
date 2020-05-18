@@ -12,5 +12,5 @@ install:
 script:
 
   - echo "reached sript section"
-  - gcc   
+  - gcc   QuotRem.c
   - ./output
