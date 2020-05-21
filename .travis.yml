@@ -35,7 +35,7 @@ script:
 
   - echo "Reached Script Section - cunit_democode"
 
-  - gcc   	QuotRem.c -o cunit_democode -lcunit
+  - gcc   	Cunit_Ex.c -o cunit_democode -lcunit
 
   - ./cunit_democode
 
