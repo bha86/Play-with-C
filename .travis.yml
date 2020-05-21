@@ -1,42 +1,20 @@
-
 language: c
 
-
-
 compiler:
-
   - gcc
-
 before_install:
-
-  - echo "Reached before install Section - cunit packages install"
-
   - sudo apt-get update
-
- # - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
- 
+  - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
 install:
-
   - echo  "Reached Install Section"
 
-
-
 script:
-
-  - pwd
-
-  - echo "Reached Script Section - Multi File Compile "
-
-  - gcc   	QuotRem.c -o output
-
+  - echo "Reached Script Section"
+  - gcc   QuotRem.c -o output
   - ./output
+  #added section for cunit testing
 
-  - size output
-
-  - echo "Reached Script Section - cunit_democode"
-
-  - gcc   	Cunit_Ex.c -o cunit_democode -lcunit
-
-  - ./cunit_democode
-
-  - size cunit_democode
+  - echo "Reached Script Section - C_Unit_Function"
+  - gcc   Cunit_Ex.c -o C_Unit_Function -lcunit
+  - ./C_Unit_Function
+  - size C_Unit_Function
